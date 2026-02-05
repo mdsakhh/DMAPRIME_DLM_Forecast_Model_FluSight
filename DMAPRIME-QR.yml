@@ -1,0 +1,22 @@
+team_name: "CPHMR, Clemson University"
+team_abbr: "DMAPRIME"
+model_name: "Quantile Regression"
+model_abbr: "QR"
+model_contributors: [
+  {
+    "name": "Tanvir Ahammed",
+    "affiliation": "Clemson University, South Carolina",
+    "email": "tahamme@g.clemson.edu"    }
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "CDC weekly flu hospital admissions (NHSN), EHR surveillance data (weekly flu test volumes, positive tests, inpatient hospitalizations)"
+methods: "Multi-quantile regression with recursive trend-based forecasting"
+methods_long: "A multi-quantile regression model integrating real-time EHR surveillance data with historical CDC hospitalization trends to generate probabilistic nowcasts and short-term forecasts. Predictors include weekly Prisma Health EHR flu test volumes, positive tests, inpatient hospitalizations, log-transformed values with 1–2 week momentum, and a one-week lagged CDC hospitalization target, along with seasonal and holiday indicators.
+All counts are modeled on the log scale and back-transformed. Forecasts for 0–3 weeks ahead use a recursive approach, projecting EHR predictors using exponentially weighted trends from the most recent four weeks, with adaptive damping to balance stability and responsiveness. Uncertainty is quantified through predictive quantiles, with isotonic regression enforcing monotonicity and upper-quantile compression during declining phases. Predictions are location-specific. Model updated January 28, 2026: simplified lag structure, added weighted recent-trend projection, and implemented stability safeguards for rapid hospitalization changes."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+model_version: "1.2"
+website_url: "https://github.com/Ahammed-Tanvir/FluSight"  
+team_funding: "Center for Forecasting and Outbreak Analytics of the Centers for Disease Control and Prevention (CDC) under award number NU38FT000011 and National Library of Medicine of the National Institutes of Health (NIH) under award number R01LM014193."  
+backfill_adjustment: "false"
