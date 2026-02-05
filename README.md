@@ -14,9 +14,8 @@
 | **Health System EHR** | Weekly positive tests, inpatient hospitalizations (SC) |
 
 
-**Locations**: South Carolina (FIPS: 45), United States (US)
+**Locations**:  United States (US)
 
-**Note**: SC EHR data is applied to both SC and US models.
 
 ## Features
 
