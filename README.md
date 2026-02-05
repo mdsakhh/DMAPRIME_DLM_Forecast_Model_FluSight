@@ -11,8 +11,8 @@
 | Source | Description |
 |--------|-------------|
 | **CDC FluSight Hub** | Weekly incident influenza hospitalizations (target variable) |
-| **Prisma Health EHR** | Weekly positive tests, inpatient hospitalizations (SC) |
-| **MUSC EHR** | Weekly positive tests, inpatient hospitalizations (SC) |
+| **Health System EHR** | Weekly positive tests, inpatient hospitalizations (SC) |
+
 
 **Locations**: South Carolina (FIPS: 45), United States (US)
 
@@ -23,8 +23,8 @@
 | Feature Type | Description |
 |--------------|-------------|
 | **Y Lags** | Lagged hospitalization values (e.g., lag 1-10 weeks) |
-| **EHR Positive Test Lags** | Lagged weekly positive tests from Prisma + MUSC (e.g., lag 5-10 weeks) |
-| **EHR Inpatient Lags** | Lagged weekly inpatient hospitalizations from Prisma + MUSC (e.g., lag 5-10 weeks) |
+| **EHR Positive Test Lags** | Lagged weekly positive tests from Health System EHR (e.g., lag 5-10 weeks) |
+| **EHR Inpatient Lags** | Lagged weekly inpatient hospitalizations from Health System EHR (e.g., lag 5-10 weeks) |
 | **Thanksgiving Flag** | Binary indicator (±3 days of 4th Thursday in November) |
 | **Christmas Flag** | Binary indicator (December 20+) |
 | **New Year Flag** | Binary indicator (January 1-7) |
